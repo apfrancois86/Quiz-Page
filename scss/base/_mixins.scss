@@ -1,0 +1,15 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin link-hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@mixin article-reset {
+  padding: 0;
+  overflow: hidden;
+}
