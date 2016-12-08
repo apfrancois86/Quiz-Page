@@ -421,6 +421,9 @@ section {
   width: 15%;
   display: flex;
   margin: 0 0 0 auto; }
+  @media (max-width: 705px) {
+    .browse-menu {
+      width: 25%; } }
   .browse-menu p {
     margin: auto; }
 
