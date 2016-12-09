@@ -48,13 +48,15 @@ section {
     border-radius: 3px 3px 0 0;
     font-weight: bold;
     line-height: 1.5em;
-    padding: 1.5em 1.5em; }
+    padding: 1.5em 1.5em 0 1.5em;
+    text-align: center; }
   .card .card-copy {
     font-size: 0.9em;
     line-height: 1.5em;
-    padding: 0.75em 0.75em; }
-    .card .card-copy p {
-      margin: 0 0 0.75em; }
+    padding-top: 10px; }
+    .card .card-copy h3 {
+      margin: 0 0 0.75em;
+      text-align: center; }
   .card:focus, .card:hover {
     cursor: pointer; }
     .card:focus img, .card:hover img {
@@ -93,7 +95,6 @@ section {
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
-      margin-right: 5px;
       margin-right: 1%; }
       .card:last-child {
         margin-right: 0; } }
@@ -103,8 +104,7 @@ section {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      margin-right: 5px;
-      margin-right: 2%; }
+      margin-right: 0; }
       .card:last-child {
         margin-right: 0; } }
 
@@ -126,7 +126,7 @@ section {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      margin-right: 1%; }
+      margin-right: 0; }
       .first-card:last-child {
         margin-right: 0; } }
   @media (max-width: 705px) {
@@ -135,9 +135,15 @@ section {
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      margin-right: 1%; }
+      margin-right: 1%;
+      margin-right: 0;
+      height: 250px; }
       .first-card:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      .first-card .card-image {
+        width: 300px;
+        height: 150px;
+        margin: 0 auto; } }
 
 .main-container {
   max-width: 1300px;
@@ -149,5 +155,19 @@ section {
     clear: both;
     content: "";
     display: block; }
+
+.button {
+  display: inline-block;
+  width: 48%;
+  height: 65px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background: transparent;
+  padding: 20px 60px;
+  margin: 0 5px 5px 0;
+  border: 2px solid black;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=application.css.map */
