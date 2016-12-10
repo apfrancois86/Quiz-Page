@@ -36,6 +36,20 @@ section {
   box-shadow: 0 2px 4px #e6e6e6;
   cursor: pointer;
   margin: 0 0 1.5em 0; }
+  .card:nth-of-type(1) {
+    background: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)), url(../img/pic_1.jpg); }
+  .card:nth-of-type(2) {
+    background: linear-gradient(rgba(0, 255, 0, 0.4), rgba(0, 255, 0, 0.4)), url(../img/pic_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .card:nth-of-type(3) {
+    background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 255, 0.4)), url(../img/pic_3.jpg); }
+  .card:nth-of-type(4) {
+    background: linear-gradient(rgba(255, 255, 0, 0.4), rgba(255, 255, 0, 0.4)), url(../img/pic_4.jpg); }
+  .card:nth-of-type(5) {
+    background: linear-gradient(rgba(255, 0, 255, 0.4), rgba(255, 0, 255, 0.4)), url(../img/pic_5.jpg);
+    background-position: center;
+    background-repeat: no-repeat; }
   .card .card-image {
     background-color: #fbdd42;
     position: relative;
@@ -69,19 +83,6 @@ section {
     .card .card-copy h3 {
       margin: 0 0 0.75em;
       text-align: center; }
-  .card::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    display: block;
-    opacity: 0.3;
-    background: yellow url(../img/pic_1.jpg) right no-repeat;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 1; }
 
 .quiz-section {
   max-width: 1200px;
@@ -202,7 +203,7 @@ section {
   background: transparent;
   padding: 30px 10px;
   margin: 0 5px 5px 0;
-  border: 2px solid #777777;
+  border: 2px solid #fff;
   border-radius: 10px; }
   .button a {
     text-decoration: none;
@@ -210,7 +211,7 @@ section {
     width: 100%;
     font-size: 1.2em;
     vertical-align: middle;
-    color: #777777; }
+    color: #fff; }
   .button:hover {
     background-color: red;
     cursor: pointer; }

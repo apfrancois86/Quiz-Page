@@ -19,6 +19,30 @@ section {
   @include omega;
   display: block;
   position: relative;
+  &:nth-of-type(1){
+    background: linear-gradient(rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.4)),
+    url(../img/pic_1.jpg);
+  }
+  &:nth-of-type(2){
+    background: linear-gradient(rgba(0, 255, 0, 0.4), rgba(0, 255, 0, 0.4)),
+    url(../img/pic_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:nth-of-type(3){
+    background: linear-gradient(rgba(0, 0, 255, 0.4), rgba(0, 0, 255, 0.4)),
+    url(../img/pic_3.jpg);
+  }
+  &:nth-of-type(4){
+    background: linear-gradient(rgba(255,255,0, 0.4), rgba(255,255,0, 0.4)),
+    url(../img/pic_4.jpg);
+  }
+  &:nth-of-type(5){
+    background: linear-gradient(rgba(255,0,255, 0.4), rgba(255,0,255, 0.4)),
+    url(../img/pic_5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .card-image {
     background-color: $yellow;
     position: relative;
@@ -59,19 +83,4 @@ section {
     }
   }
   @include card;
-  &::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    display: block;
-    opacity: 0.3;
-    background: yellow url(../img/pic_1.jpg) right no-repeat;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 1;
-
-  }
 }
