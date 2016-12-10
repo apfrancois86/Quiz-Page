@@ -4,6 +4,7 @@
 }
 body {
   background-color: $grey;
+  font-family: sans-serif;
 }
 section {
   @include clearfix;
@@ -16,10 +17,14 @@ section {
 //Cards
 .card {
   @include omega;
+  display: block;
+  position: relative;
   .card-image {
-    background-color: $card-image-hover-color;
+    background-color: $yellow;
+    position: relative;
+    z-index: 2;
     height: 150px;
-    width: 300px;
+    width: 250px;
     @extend %center;
     overflow: hidden;
     img {
@@ -30,11 +35,12 @@ section {
     }
   }
   .card-header {
-    background-color: $card-header-background;
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
     font-weight: bold;
     line-height: 1.5em;
+    position: relative;
+    z-index: 2;
     padding: ($base-spacing) ($base-spacing) 0 ($base-spacing);
     text-align: center;
   }
@@ -43,6 +49,8 @@ section {
     line-height: 1.5em;
     padding-top: 10px;
     width: 100%;
+    position: relative;
+    z-index: 2;
     @extend %center;
     text-align: center;
     h3 {
@@ -50,12 +58,20 @@ section {
       text-align: center;
     }
   }
-  &:focus,
-  &:hover {
-    cursor: pointer;
-    img {
-      opacity: $card-image-hover-opacity;
-    }
-  }
   @include card;
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    opacity: 0.3;
+    background: yellow url(../img/pic_1.jpg) right no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+
+  }
 }

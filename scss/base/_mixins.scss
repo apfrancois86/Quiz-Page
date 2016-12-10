@@ -15,3 +15,14 @@
   cursor: pointer;
   margin: 0 0 $base-spacing $card-margin;
 }
+
+@mixin button {
+  height: 85px;
+  text-align: center;
+  color: black;
+  background: transparent;
+  padding: 30px 10px ;
+  margin: 0 5px 5px 0;
+  border: 2px solid $text-grey;
+  border-radius: 10px;
+}

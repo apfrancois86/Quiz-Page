@@ -1,0 +1,17 @@
+.header {
+  background-image: url(../img/stars.jpg);
+  text-align: center;
+  height: 275px;
+  padding-top: 30px;
+  h1 {
+    text-shadow: 2px 2px 10px $yellow;
+    color: black;
+  }
+  img {
+    width: 40%;
+    height: 200px;
+    @media (max-width: $brk-2) {
+      width: 80%;
+    }
+  }
+}

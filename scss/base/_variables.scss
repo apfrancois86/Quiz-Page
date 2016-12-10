@@ -5,9 +5,10 @@ $light-blue : rgb(170,220, 230);
 $blue : rgb(0, 86, 137);
 $dark-blue : rgb(0, 69, 110);
 $grey : rgb(245, 245, 245);
-$dark-gray  : rgb(43,43,43);
+$dark-gray : rgb(43,43,43);
 $dark-red : rgb(180, 2, 87);
 $text-grey: rgb(119, 119, 119);
+$yellow : rgb(251, 221, 66);
 
 //card colors & background
 
@@ -32,3 +33,7 @@ $card-margin: 0;
 
 $brk-1: 1050px;
 $brk-2: 705px;
+
+//other
+
+$images: (1,2,3,4,5);
